@@ -1,0 +1,208 @@
+body {
+	margin: 0;
+	font-family: 'Poiret One', cursive;
+	font-size: 14px;
+	color: #fff;
+	line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+
+.container {
+	width: 80%;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.intro {
+	width: 100%;
+	height: 100vh;
+	background: url("../images/1.jpg") center no-repeat;
+	-webkit-background-size: 80% 80%;
+	background-size: 80% 80%;
+}
+.intro_title {
+	margin-top: 115px;
+	font-size: 50px;
+	color: #333;
+	text-transform: uppercase;
+	font-family: 'Bad Script', cursive;
+	text-align: center;
+	
+
+}
+.intro_stitle {
+	font-size: 20px;
+	color: #333;
+	text-align: center;
+	
+}
+.header {
+	width: 100%;
+	height: 15vh;
+	background-color: #333;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+}
+.button {
+	font-family: 'Poiret One', cursive;
+	font-size: 20px;
+	background: #333;
+	color: #fff;
+	margin-top: 27px;
+	position: relative;
+	border: double #aeaeae;
+	text-decoration:none;
+}
+.button:hover {
+	background: #aeaeae;
+	color: #333;
+	text-decoration:none;
+}
+.button2 {
+	text-decoration:none;
+	color: #fff;
+}
+
+/* навигация */
+.nav {
+	margin-left: 180px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.nav_link {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 35px;
+	margin-top: 27px;
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.3s linear;
+}
+.nav_link:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: #aeaeae;
+	opacity: 0;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	transition: opacity 0.2s linear;
+}
+.nav_link:hover {
+	color: #aeaeae;
+}
+.nav_link:hover:after {
+	opacity: 1;
+}
+.section {
+	padding: 105px 0px 80px;
+}
+.info {
+	margin: 10px;
+	font-size: 20px;
+	color: #333;
+	font-family: 'Bad Script', cursive;
+	text-align: center;
+	
+}
+
+
+/* изобрадения.номера */
+.about {
+	display: flex;
+	justify-content: space-between;
+	
+}
+.about_itm {
+	background: #CD853F;
+	width: 240px;
+	position: relative;
+}
+.about_itm:hover .about_img {
+	transform: translate3d(-10px, -10px, 0);
+}
+.about_itm:hover .about_img img{
+	opacity: 0.3;
+}
+.about_itm:hover .about_text {
+	opacity: 1;
+}
+.about_img {	
+	background: linear-gradient(to bottom, #FFDAB9, #CD853F);
+	transition: transform 0.3s linear;
+}
+.about_img img {
+	display: block;
+	transition: opacity 0.1s linear;
+}
+
+/*форатирование текста*/
+.about_text {
+	width: 100%;
+	font-size: 30px;
+	color: black;
+	text-align: center;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 2;
+	transform: translate3d(0, -50%, 0);
+	transition: opacity 0.1s linear;
+}
+.text {
+	width: 100%;
+	font-size: 14px;
+	color: black;
+	text-align: center;
+	top: 50%;
+	left: 0;
+}
+.text2 {
+	width: 100%;
+	color: black;
+	font-size: 30px;
+	text-align: center;
+}
+.zag {
+	margin-top: 0px;
+	font-size: 50px;
+	color: #333;
+	text-transform: uppercase;
+	font-family: 'Bad Script', cursive;
+	text-align: center;
+}
+.contact {
+	width: 100%;
+	color: black;
+	font-size: 23px;
+	text-align: center;
+}
+
+
+/* карта */
+.map {
+	text-align: center;
+}
+.map_title {
+	font-size: 24px;
+	color: black;
+}
+.map_title a {
+	color: inherit;
+	text-decoration: none;
+}
+.section--map {
+	background: #e6e6e6 url("../images/map_bg.jpg") center no-repeat;
+}
+
